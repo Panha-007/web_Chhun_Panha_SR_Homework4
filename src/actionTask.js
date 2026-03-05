@@ -102,7 +102,6 @@ function createTaskElement(name, priority, status) {
     });
     return div;
 }
-// ── Delete confirm / cancel ──
 document.getElementById('confirm-delete-btn').addEventListener('click', () => {
     if (taskToDelete) { taskToDelete.remove(); taskToDelete = null; }
     deleteModal.close();
